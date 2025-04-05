@@ -1,0 +1,105 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.branding {
+    background-color: #000000; /* Black */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-bottom: 2em;
+}
+
+.branding h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.prompt-container {
+    max-width: 700px;
+    margin: 2em auto; /* Add top margin and center */
+    padding: 1em 2em 2em 2em; /* Add some padding */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2#prompt-title {
+    text-align: center;
+    color: #555;
+    margin-top: 1em; /* Reduced top margin */
+    margin-bottom: 1em; /* Reduced bottom margin */
+    font-weight: 500;
+}
+
+#collect-button {
+    display: block;
+    width: 100%; /* Make button full width of container */
+    max-width: 250px; /* Optional: prevent it getting too wide */
+    margin: 0 auto 1.5em auto; /* Center button and add margin below */
+    padding: 12px 25px;
+    background-color: #FFA500; /* Orange */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#collect-button:hover {
+    background-color: #FF9900;
+}
+
+#collect-button:active {
+    transform: scale(0.98); /* Slight press effect */
+}
+
+pre#prompt-text {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 1.5em;
+    border-radius: 5px;
+    white-space: pre-wrap; /* Preserve formatting and wrap lines */
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em; /* Slightly larger default */
+    color: #000000; /* Explicit black text */
+    line-height: 1.5;
+}
+
+.confirmation {
+    text-align: center;
+    font-weight: bold;
+    color: #27ae60; /* Green color for confirmation */
+    margin: 1.5em auto; /* Match button margin */
+    padding: 10px;
+    background-color: #e8f8f0;
+    border: 1px solid #a3e4c7;
+    border-radius: 5px;
+    max-width: 350px; /* Limit width */
+}
+
+/* Basic responsiveness */
+@media (max-width: 600px) {
+    .prompt-container {
+        margin: 0 1em; /* Add side margin on smaller screens */
+        padding: 1em;
+    }
+
+    #collect-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    pre#prompt-text {
+        font-size: 0.9em;
+        padding: 1em;
+    }
+}
